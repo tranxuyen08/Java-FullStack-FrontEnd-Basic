@@ -7,9 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<style>
-  
-</style>
 <body style="width: 1150px;">
   <section style="width: 850px;margin: 0 auto; display: block;">
     <h1>Market Research Survey</h1>
@@ -63,13 +60,21 @@
       <label for="">What would you like to see in the new product</label>
       <br>
       <br>
-      <label for="">$</label>
-      <input type="number" name="dollar" id="">
-      <label for="">.</label>
-      <input type="number" name="cent" id="">
+      <table class="table-money">
+        <tr>
+          <td><label for="">$</label></td>
+          <td><input type="number" name="dollar" id=""></td>
+          <td><label for="">.</label></td>
+          <td><label for=""><input type="number" name="cent" id=""></label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="">Dollar</label></td>
+          <td></td>
+          <td><label for="">Cent</label></td>
+        </tr>
+      </table>
       <br>
-      <label for="">Dollar</label>
-      <label for="">Cent</label>
       <br>
       <br>
       <label for="">What features would you like to see in the new product.</label>
@@ -78,7 +83,7 @@
       <textarea name="" id="" cols="100" rows="10"></textarea>
       <br>
       <br>
-      <table style="width: 820px;">
+      <table class="box-table" style="width: 820px;">
         <tr>
           <td></td>
           <td>Strongly Disagree</td>
@@ -88,21 +93,25 @@
         </tr>
         <tr>
           <th>Our products are priced farly.</th>
-          <td>
+          <td style="text-align: center;">
             <form action="">
               <input type="radio" name="radio1" id="">
+              <br>
               <label for="">1</label>
           </td>
-          <td>
+          <td style="text-align: center;">
             <input type="radio" name="radio1" id="">
+            <br>
             <label for="">2</label>
           </td>
-          <td>
+          <td style="text-align: center;">
             <input type="radio" name="radio1" id="">
+            <br>
             <label for="">3</label>
           </td>
-          <td>
+          <td style="text-align: center;">
             <input type="radio" name="radio1" id="">
+            <br>
             <label for="">4</label>
           </td>
     </form>
@@ -110,20 +119,24 @@
     <tr>
       <th>Our products are high farly.</th>
       <form action="">
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio2" id="">
+          <br>
           <label for="">1</label>
         </td>
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio2" id="">
+          <br>
           <label for="">2</label>
         </td>
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio2" id="">
+          <br>
           <label for="">3</label>
         </td>
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio2" id="">
+          <br>
           <label for="">4</label>
         </td>
       </form>
@@ -131,20 +144,24 @@
     <tr>
       <th>You would recommented our product to a friend or comwoker</th>
       <form action="">
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio3" id="">
+          <br>
           <label for="">1</label>
         </td>
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio3" id="">
+          <br>
           <label for="">2</label>
         </td>
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio3" id="">
+          <br>
           <label for="">3</label>
         </td>
-        <td>
+        <td style="text-align: center;">
           <input type="radio" name="radio3" id="">
+          <br>
           <label for="">4</label>
         </td>
       </form>
@@ -167,13 +184,20 @@
     border-collapse: collapse;
     width: 100%;
   }
-
-  td,
+.table-money td , th {
+  border: none;
+  background-color: white;
+}
+.table-money{
+  width: 100px;
+}
+  .box-table td,
   th {
-    border: 1px solid #dddddd;
+    border: 1px solid ;
     text-align: left;
     padding: 8px;
   }
+
   tr:nth-child(odd) {
     background-color: #dddddd;
   }
