@@ -7,6 +7,9 @@ a{
 a:hover{
   color: red;
 }
+ul li {
+  list-style: none;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -20,6 +23,9 @@ body{
   display: block;
   width: 100%;
 }
+.story-list{
+  border-bottom: 3px solid green;
+}
 h1{
   color: blue;
   text-align: center;
@@ -32,12 +38,14 @@ h3{
   font-size: 15px;
   font-weight: 800;
 }
-.content-chapter {
-
-}
 .content-chapter p{
   margin: 0;
   float: right;
+  text-align: justify;
+}
+.header{
+  border-bottom: 3px solid green;
+  padding-bottom: 10px;
 }
 .nav-header {
   display: flex;
@@ -63,4 +71,13 @@ span{
 span:hover{
   color: red;
 
+}
+#chapter{
+  display: none;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
 }

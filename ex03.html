@@ -10,20 +10,75 @@
 </head>
 
 <body>
-  <section>
+  <section class="header">
     <h1>Truyện cười bốn mùa</h1>
     <nav class="nav-header">
       <a id="home" href="">Trang Chủ</a>
       <a class="" href="#title-detective-story">Truyện Trinh Thám</a>
       <a href="#">Truyện Cười</a>
       <a href="#">Truyện Kiếm Hiệp</a>
-      <a href="#">Truyện  Tình</a>
+      <a href="#">Truyện Tình</a>
       <a href="#">Truyện Ma</a>
     </nav>
   </section>
   <section class="content-story">
     <h2 id="title-detective-story">Truyện Trinh Thám</h2>
-    <aside>
+    <ul class="story-list">
+      <li>
+        <a href="#introduce">Giới Thiệu</a>
+        <p>Đây là câu chuyện của một thiếu niên võ tăng bị huynh đệ sinh đôi hố vào giới văn nghệ, kết quả không cẩn
+          thận trở thành ảnh đế siêu cấp nổi tiếng.
+
+          Hứa Trăn là cô nhi lớn lên ở chùa miếu, được chủ trì một tay nuối nấng.
+
+          Vốn định xuất gia và năm 20 tuổi nhưng kết quả, mười tám tuổi năm đó, một người tự xưng là ca ca sinh đôi đến
+          đón hắn đi bái tế mẹ ruột.
+
+          Hứa Trăn suy nghĩ thật lâu, cuối cùng vẫn nghe theo lời đề nghị của sư phụ</p>
+      </li>
+      <li>
+        <a onclick="myFunction()" id="story-link" href="#chapter">Danh Sách Chương</a>
+        <div class="show chapter-link-content" id="chapter-link-content">
+          <ol>
+            <li>
+              <a id="detective-story" href="#chapter-1">
+                <h5>Chapter 1</h5>
+              </a>
+            </li>
+            <li>
+              <a id="detective-story" href="#chapter-2">
+                <h5>Chapter 2</h5>
+              </a>
+            </li>
+            <li>
+              <a id="detective-story" href="#chapter-3">
+                <h5>Chapter 3</h5>
+              </a>
+            </li>
+            <li>
+              <a id="detective-story" href="#chapter-4">
+                <h5>Chapter 4</h5>
+              </a>
+            </li>
+            <li>
+              <a id="detective-story" href="#chapter-5">
+                <h5>Chapter 5</h5>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </li>
+    </ul>
+    <!-- <aside class="introduce">
+      <p>Đây là câu chuyện của một thiếu niên võ tăng bị huynh đệ sinh đôi hố vào giới văn nghệ, kết quả không cẩn thận trở thành ảnh đế siêu cấp nổi tiếng.
+
+        Hứa Trăn là cô nhi lớn lên ở chùa miếu, được chủ trì một tay nuối nấng.
+
+        Vốn định xuất gia và năm 20 tuổi nhưng kết quả, mười tám tuổi năm đó, một người tự xưng là ca ca sinh đôi đến đón hắn đi bái tế mẹ ruột.
+
+        Hứa Trăn suy nghĩ thật lâu, cuối cùng vẫn nghe theo lời đề nghị của sư phụ</p>
+    </aside> -->
+    <!-- <aside id="chapter">
       <a id="detective-story" href="#chapter-1">
         <h5>Chapter 1</h5>
       </a>
@@ -39,7 +94,7 @@
       <a id="detective-story" href="#chapter-5">
         <h5>Chapter 5</h5>
       </a>
-    </aside>
+    </aside> -->
     <article class="chapter" id="chapter-1">
       <h3>Truyện Trinh Thám Chương 1</h3>
       <div class="content-chapter">
@@ -78,7 +133,8 @@
     <article class="chapter" id="chapter-2">
       <h3>Truyện Trinh Thám 2</h3>
       <p>
-        <img class="img" src="https://dauladailuc.com/content/images/size/w1000/2023/03/IMG_9001.JPG" alt="">
+        <img class="img"
+          src="https://yymedia.codeprime.net/media/novels/202303/tieu-thiep-vuong-phu-dich-81f2da1ebc.jpg" alt="">
         Lục Khiêm là một kẻ tu đạo, nhưng khác với những đạo sĩ chân chính khác, đạo mà hắn tu lại là bàng môn tà đạo,
         thứ đạo thuật hung hiểm và vô cùng tàn ác. Trước khi dấn thân vào con đường bàng môn này, đạo tâm của Lục Khiêm
         vô cùng sạch sẽ thuần khiết, hắn từng là đạo đồng ở phủ của Mạc tiên nhân, mỗi ngày chăm chỉ tu luyện cho ra khí
@@ -107,7 +163,9 @@
     <article class="chapter" id="chapter-3">
       <h3>Truyện Trinh Thám 3</h3>
       <p>
-        <img class="img" src="https://dauladailuc.com/content/images/size/w1000/2023/03/IMG_9001.JPG" alt="">
+        <img class="img"
+          src="https://yymedia.codeprime.net/media/novels/202208/thumb_dau-pha-chi-dich-bao-he-thong-dich-f4ce9e1894_80x120.png"
+          alt="">
         Lục Khiêm là một kẻ tu đạo, nhưng khác với những đạo sĩ chân chính khác, đạo mà hắn tu lại là bàng môn tà
         đạo,
         thứ đạo thuật hung hiểm và vô cùng tàn ác. Trước khi dấn thân vào con đường bàng môn này, đạo tâm của Lục
@@ -141,7 +199,9 @@
     <article class="chapter" id="chapter-4">
       <h3>Truyện Trinh Thám 4</h3>
       <p>
-        <img class="img" src="https://dauladailuc.com/content/images/size/w1000/2023/03/IMG_9001.JPG" alt="">
+        <img class="img"
+          src="https://yymedia.codeprime.net/media/novels/202201/thumb_ban-tang-khong-muon-lam-anh-de-ban-dich-cf151b0ded_80x120.png"
+          alt="">
         Lục Khiêm là một kẻ tu đạo, nhưng khác với những đạo sĩ chân chính khác, đạo mà hắn tu lại là bàng môn tà đạo,
         thứ đạo thuật hung hiểm và vô cùng tàn ác. Trước khi dấn thân vào con đường bàng môn này, đạo tâm của Lục Khiêm
         vô cùng sạch sẽ thuần khiết, hắn từng là đạo đồng ở phủ của Mạc tiên nhân, mỗi ngày chăm chỉ tu luyện cho ra khí
@@ -169,7 +229,9 @@
     <article class="chapter" id="chapter-5">
       <h3>Truyện Trinh Thám 5</h3>
       <p>
-        <img class="img" src="https://dauladailuc.com/content/images/size/w1000/2023/03/IMG_9001.JPG" alt="">
+        <img class="img"
+          src="https://yymedia.codeprime.net/media/novels/202303/thumb_keu-nguoi-di-chiu-chet-chu-khong-bao-nguoi-vo-dich-ff07281b0d_80x120.png"
+          alt="">
         Lục Khiêm là một kẻ tu đạo, nhưng khác với những đạo sĩ chân chính khác, đạo mà hắn tu lại là bàng môn tà đạo,
         thứ đạo thuật hung hiểm và vô cùng tàn ác. Trước khi dấn thân vào con đường bàng môn này, đạo tâm của Lục Khiêm
         vô cùng sạch sẽ thuần khiết, hắn từng là đạo đồng ở phủ của Mạc tiên nhân, mỗi ngày chăm chỉ tu luyện cho ra khí
@@ -200,5 +262,23 @@
     <a id="ghost-story" href=""></a>
   </section>
 </body>
+<script type="text/javascript">
+  // document.addEventListener('click', function classClicked(event) {
+
+  // event.target.classList.add('hide');
+
+  // });
+  // const click = document.getElementById('chapter-link-content');
+  // console.log(click);
+  function myFunction() {
+    var click = document.getElementById('chapter-link-content');
+    console.log(click);
+    // if(click === '.show'){
+    //   alert (2);
+    // }else{
+    //   alert(1);
+    // }
+  }
+</script>
 
 </html>
