@@ -1,0 +1,66 @@
+body {
+  position: relative;
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+.slider {
+  background-color: antiquewhite;
+  color: white;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.slider {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.slide div {
+  display: flex;
+  width: 100%;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
+.slide div a {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  color: black;
+}
+
+.pagination {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  margin: 10px;
+  top: 300px;
+  text-align: center;
+}
+
+.pagination>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  color: red;
+  border-radius: 50%;
+  text-align: center;
+}
