@@ -9,6 +9,8 @@
   border-radius: 50%;
   margin: 100px auto 0px auto;
   border: 10px solid orange;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRGncelRc4rSf8fGBIglro53DH8MibXMuAA&usqp=CAU);
+  background-size: 300px 200px;
 }
 
 .center {
@@ -33,10 +35,9 @@
   top: 75px;
   left: 145px;
   z-index: 10;
-  /* hàm thay đổi vị trí kim đồng hồ */
-  transform: rotate(-46deg);
-  /* animation: hourMove 43200s linear infinite; */
-  /* outline: 100px solid transparent; */
+  transform: rotate(321deg);  /* hàm thay đổi vị trí kim đồng hồ */
+  animation: hourMove 43200s linear infinite;
+  outline: 100px solid transparent;
 }
 
 /* tạo di chuyển cho kim giờ */
@@ -44,7 +45,6 @@
   0% {
     transform: rotate(150deg);
   }
-
   100% {
     transform: rotate(510deg);
   }
@@ -58,9 +58,12 @@
   background-color: #000;
   border-radius: 4px;
   transform-origin: bottom center;
-  top: 35px;
+  top: 30px;
   left: 146px;
-  transform: rotate(46deg);
+  transform: rotate(226deg);
+  animation: minMove 3600s linear infinite;
+  outline: 100px solid transparent;
+
 }
 
 /* tạo di chuyển cho kim phút */
