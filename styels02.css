@@ -4,15 +4,23 @@ body {
   margin: 50px;
   justify-content: center;
 }
+.back-ground{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
+}
 .slider {
+  position: absolute;
+  z-index: 10;
   background-color: antiquewhite;
   color: white;
   width: 300px;
   height: 300px;
   display: flex;
   overflow-x: auto;
-
 }
 
 .slide {
@@ -47,10 +55,12 @@ p {
   display: flex;
   width: 300px;
   justify-content: space-around;
-  margin: 10px;
+  margin: 65px 0;
   top: 300px;
   text-align: center;
 }
+
+
 
 .pagination>a {
   display: flex;

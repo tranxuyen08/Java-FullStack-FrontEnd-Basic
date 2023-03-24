@@ -1,6 +1,6 @@
 .clock {
   position: relative;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   width: 300px;
@@ -27,16 +27,16 @@
 /* Tạo kim giờ */
 .hourdHand {
   position: absolute;
-  width: 10px;
-  height: 75px;
+  width: 75px;
+  height: 10px;
   background-color: #000;
-  transform-origin: bottom center;
+  transform-origin: center right;
   border-radius: 4px;
-  top: 75px;
-  left: 145px;
+  top: 141px;
+  left: 73px;
   z-index: 10;
-  transform: rotate(321deg);  /* hàm thay đổi vị trí kim đồng hồ */
-  animation: hourMove 43200s linear infinite;
+  transform: rotate(180deg);  /* hàm thay đổi vị trí kim đồng hồ */
+  animation: hourMove 4320s linear infinite;
   outline: 100px solid transparent;
 }
 
@@ -53,13 +53,13 @@
 /* tạo kim phút */
 .minutedHand {
   position: absolute;
-  width: 8px;
-  height: 120px;
+  width: 120px;
+  height: 8px;
   background-color: #000;
   border-radius: 4px;
-  transform-origin: bottom center;
-  top: 30px;
-  left: 146px;
+  transform-origin: center right;
+  top: 145px;
+  left: 32px;
   transform: rotate(226deg);
   animation: minMove 3600s linear infinite;
   outline: 100px solid transparent;
@@ -94,18 +94,18 @@
   transform-origin: bottom center;
   border-radius: 4px;
   position: absolute;
-  top: -120px;
-  left: -1px;
+  top: 0px;
+  left: 149px;
   transition: all 0.06s;
   z-index: 8;
   transform: rotate(0);
   outline: 100px solid transparent;
+  animation: secMove 60s normal infinite steps(60,end);
 }
 
 .sec {
   position: relative;
   z-index: 30;
-  animation: secMove 60s normal infinite steps(60,end);
 }
 /* tạo di chuyển kim dây */
 @keyframes secMove {
