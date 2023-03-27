@@ -1,0 +1,47 @@
+ul li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 1000px;
+  font-family: Verdana, sans-serif;
+ font-size: 0.9em;
+}
+.header, .footer {
+  padding: 10px;
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+.nav-list {
+  display: flex;
+  padding: 0;
+}
+.nav-item {
+  padding-right: 10px;
+}
+.news-section {
+  background-color: #b8b3b3;
+}
+.news-article{
+  background-color: white;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+h2{
+  padding-left: 10px;
+}
+.text {
+  padding-left: 10px;
+}
+
+/* footer */
+.text-footer {
+  color: white;
+}

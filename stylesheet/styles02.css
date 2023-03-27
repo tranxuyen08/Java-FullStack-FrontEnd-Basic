@@ -1,0 +1,97 @@
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.btn-primary {
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.btn-secondary{
+  background-color: dimgray;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+body {
+  width: 100%;
+  min-width: 530px;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.header {
+  width: 100%;
+  background-color: darkgray;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+h1 {
+  margin-left: 10px;
+  color: white;
+}
+
+.sect-album {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.8;
+}
+.sect-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  background-color: bisque;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+.tex{
+  text-align: center;
+}
+.card{
+  /* margin: 20px 0 0 20px; */
+  background-color: #fff;
+}
+.card > div{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card > div > div{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+
+  .sect-card{
+    display: block;
+  }
+  .tex{
+    text-align: left;
+  }
+  img{
+    object-fit: cover
+    ;
+  }
+  .card{
+    margin: 50px;
+  }
+}
