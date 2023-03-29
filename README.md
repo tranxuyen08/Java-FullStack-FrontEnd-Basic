@@ -31,8 +31,8 @@ BEGIN
   INPUT a1,a2,a3,...,an
   a1 = MAX
   i = 1
-  while i <= n
-  do
+  start loop
+  if i <= n
     if ai > max
         MAX = ai
         end if
@@ -47,13 +47,13 @@ BEGIN
   IF POINT >= 75
   DISPLAY TYPE A
   ELSE
-    IF POITN < 75 AND POINT >= 60
+    IF POINT >= 60
     DISPLAY TYPE B
     ELSE
-      IF POINT <60 AND POINT >= 45
+      IF POINT >= 45
       type C
       ELES
-        IF POINT <45 AND POINT >= 35
+        IF POINT >= 35
         DISPLAY TYPE D
         ELSE type E
 END
