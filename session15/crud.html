@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #d9e7e7;
+  }
+  ul{
+    padding: 0;
+  }
+ul li{
+  list-style: none;
+}
+  .content {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .todo-form {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .input-todo {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .btn-primary {
+    width: 20%;
+    padding: 10px;
+    background-color: #f0f00a;
+    color: black;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .todo-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding: 10px;
+    margin-bottom: 2px;
+  }
+  .btn-delete{
+    color: black;
+    background-color: red;
+  }
+  .btn-update{
+    color: black;
+    background-color: green;
+  }
+  .btn-secondary{
+    color: black;
+    background-color: blue;
+    padding: 10px;
+  }
+  .btn-hidden{
+    display: none;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Todo App</h1>
+      <div class="todo-form">
+        <input class="input-todo" type="text" name="" id="" placeholder="Add your new todo">
+        <button class="btn-primary" type="submit" onclick="todoApp()">Add</button>
+        <button class="btn-secondary btn-hidden" type="submit" onclick="updateText()">Update</button>
+        <ul class="todo-list">
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="crud.js"></script>
+</html>
